@@ -1,0 +1,216 @@
+/*
+Template Name: Prodrusty
+Author: Mahmudur Rahman
+Version: 1.0.0
+Author URL: 
+UI Designer:
+Description: 
+
+Table Of Content
+========================
+1. Header Section 
+      1.1) Top Bar
+      1.2) NAv Bar
+2. Banner Section
+3. Service Section 
+
+*/
+
+/* Common Css Start */
+:root{
+    --primaryColor: #ffca36;
+    --secondaryColor:#353535;
+    --primaryWhite:#ffff;
+    --secondaryWhite:#dddddd;
+    --textColor:#555555;
+ }
+ body{
+    font-family: 'Roboto', sans-serif;
+    color: var(--textColor);
+ }
+ h1,h2,h3,h4,h5,h6{
+    color: var(--secondaryColor);
+ }
+ h1,h2,h3,h4,h5,h6,
+ p,
+ ul,ol,
+ span,
+ small{
+    margin: 0;
+    padding: 0;
+ }
+ ol,ul{
+    list-style-type: none;
+ }
+ a,a:hover{
+    text-decoration: none;
+    display: inline-block;
+ }
+ /* //Common Css End */
+ /* Header Section CSS Start */
+#header #topBar{
+    background: var(--primaryColor);
+ }
+ #header #topBar .topbar_left p{
+    color: var(--secondaryColor);
+    font-size: 14px;
+ }
+ #header #topBar .topbar_mid{
+    background: var(--secondaryColor);
+    transform: skew(-35deg);
+    padding: 10px;
+ }
+ #header #topBar .topbar_mid p{
+    transform: skew(35deg);
+    text-align: center;
+    color: var(--primaryWhite);
+    font-size: 14px;
+ }
+ #header #topBar .topbar_right ul li a i{
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    line-height: 24px;
+    /* border: 1px solid black; */
+ }
+ #header #topBar .topbar_right ul{
+    margin-left: 5px;
+ }
+ #header #topBar .topbar_right ul li{
+    position: relative;
+    line-height: 0;
+    margin-right: 10px;
+ }
+ #header #topBar .topbar_right ul li::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    background-color: var(--secondaryColor);
+    top: 0;
+    left: 0;
+    z-index: 55;
+    transform: scaleY(0);
+    transition: .4s;
+ }
+ #header #topBar .topbar_right ul li::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    background-color: var(--secondaryColor);
+    top: 0;
+    right: 0;
+    z-index: 55;
+    transform: scaleY(0);
+    transition: .4s;
+ }
+ #header #topBar .topbar_right ul li:hover:after,
+ #header #topBar .topbar_right ul li:hover::before{
+    transform: scaleY(1.3);
+ }
+ #header #topBar .topbar_right ul li a{
+    position: relative;
+    color: var(--secondaryColor);
+ }
+ #header #topBar .topbar_right ul li a::after{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background-color: var(--secondaryColor);
+    bottom: 0;
+    left: 0;
+    z-index: 55;
+    transform: scaleX(0);
+    transition: .4s;
+ }
+ #header #topBar .topbar_right ul li a::before{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background-color: var(--secondaryColor);
+    top: 0;
+    left: 0;
+    z-index: 55;
+    transform: scaleX(0);
+    transition: .4s;
+ }
+ #header #topBar .topbar_right ul li:hover a:after,
+ #header #topBar .topbar_right ul li:hover a::before{
+    transform: scaleX(1.3);
+ }
+ /* NavBar */
+ #header #nav #mainMenu ul li{
+    position: relative;
+    margin: 32px 0px;
+ }
+ #header #nav #mainMenu ul li::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    background-color: var(--secondaryColor);
+    top: 0;
+    left: 0;
+    z-index: 55;
+    transform: scaleY(0);
+    transition: .4s;
+ }
+ #header #nav #mainMenu ul li::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    background-color: var(--secondaryColor);
+    top: 0;
+    right: 0;
+    z-index: 55;
+    transform: scaleY(0);
+    transition: .4s;
+ }
+ #header #nav #mainMenu ul li:hover:after,
+ #header #nav #mainMenu ul li:hover::before{
+    transform: scaleY(1.3);
+    background-color: var(--primaryColor);
+ }
+ #header #nav #mainMenu ul li a{
+    position: relative;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--secondaryColor);
+ }
+ #header #nav #mainMenu ul li a::after{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background-color: var(--secondaryColor);
+    bottom: 0;
+    left: 0;
+    z-index: 55;
+    transform: scaleX(0);
+    transition: .4s;
+ }
+ #header #nav #mainMenu ul li a::before{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background-color: var(--secondaryColor);
+    top: 0;
+    left: 0;
+    z-index: 55;
+    transform: scaleX(0);
+    transition: .4s;
+ }
+ #header #nav #mainMenu ul li:hover a:after,
+ #header #nav #mainMenu ul li:hover a::before{
+    transform: scaleX(1.3);
+    background-color: var(--primaryColor);
+ }
+ #header #nav #mainMenu ul li a:hover{
+    color: var(--primaryColor);
+ }
+ /* Header Section CSS End */
